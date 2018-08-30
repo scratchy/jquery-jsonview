@@ -1,0 +1,8 @@
+{
+  "name": "scratchy/jquery-jsonview",
+  "license": "MIT",
+  "description": "JQuery JSON viewer",
+  "require": {
+    "php": "^5 || ^7"
+  }
+}
