@@ -46,7 +46,8 @@ do (jQuery) ->
         nl2br: false,
         recursive_collapser: false
         escape: true,
-        strict: false
+        strict: false,
+        link2anchor: true
 
       options = $.extend(defaultOptions, options)
 

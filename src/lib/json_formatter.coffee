@@ -42,7 +42,7 @@ class JSONFormatter
     @decorateWithSpan(value, 'num')
 
   stringToHTML: (value) ->
-    if (/^(http|https|file):\/\/[^\s]+$/i.test(value))
+    if (@options.link2anchor && /^(http|https|file):\/\/[^\s]+$/i.test(value))
       """
       <a href="#{@htmlEncode(value)}"><span class="q">"</span>#{@jsString(value)}<span class="q">"</span></a>
       """
